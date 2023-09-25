@@ -90,12 +90,20 @@ main {
   background-color: #5584ac;
   color: white;
 }
+
+.temoignages p {
+  font-size: 20px;
+}
 .temoignages button {
   background-color: #5584ac;
   border: none;
   margin: 10px;
+  cursor: pointer;
+}
+.temoignages button:hover {
+  scale: 1.1;
 }
 .portrait {
-  width: 80px;
+  width: 150px;
   height: auto;
 }
