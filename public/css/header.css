@@ -12,20 +12,24 @@ header {
   justify-content: space-evenly;
   background-color: black;
 }
+
 .header-logo {
   width: 83px;
   height: 83px;
 }
+
 .header-classrooms {
   width: 214px;
   height: 30px;
 }
+
 .header-links {
   list-style: none;
   color: gray;
   font-size: 25px;
   cursor: pointer;
 }
+
 .header-links a {
   text-decoration: none;
 }
@@ -34,12 +38,42 @@ header {
   color: white;
 }
 
+.search-div-icon {
+  color: white;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
 .search-icon {
   color: white;
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
+
+.search-div {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 55px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.search-input {
+  height: 50px;
+  width: 500px;
+  color: gray;
+  background-color: black;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
 
 .sign-in-btn {
   color: #5584ac;

@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/header.css">
 </head>
+
 <body>
-   <header>
-    <img class="header-logo" src={{asset ("assets/logo.png")}} alt="logo adrar">
-    <img class="header-classrooms" src={{asset ("assets/classrooms-text.png")}}>
-    <li class="header-links"><a href={{path("app_home")}}>Accueil</a></li>
-    <li class="header-links"><a href={{path("app_home")}}>Formations</a></li>
-    <li class="header-links"><a href={{path("app_home")}}>Administration</a></li> 
-    <img class="search-icon" src={{asset ("assets/loupe.svg")}}>
-    <button class="sign-in-btn">Se connecter</button>
-    </header>  
+    <header>
+        <img class="header-logo" src={{asset ("assets/logo.png")}} alt="logo adrar">
+        <img class="header-classrooms" src={{asset ("assets/classrooms-text.png")}}>
+        <li class="header-links"><a href={{path("app_home")}}>Accueil</a></li>
+        <li class="header-links"><a href={{path("app_home")}}>Formations</a></li>
+        <li class="header-links"><a href={{path("app_home")}}>Administration</a></li>
+        <div class="search-div">
+            <img class="search-div-icon" src={{asset ("assets/loupe.svg")}}>
+            <input class="search-input" type="text" placeholder="Rechercher (langages, mots-clés, cours, ...)">
+        </div>
+        <img class="search-icon" src={{asset ("assets/loupe.svg")}} onclick="toggleSearch()">
+        <button class="sign-in-btn">Se connecter</button>
+    </header>
 </body>
+
+<script>
+    function toggleSearch() {
+        var searchIcon = document.querySelector(".search-icon");
+        var searchInput = document.querySelector(".search-div");
+
+        if (searchIcon.style.display !== "none") {
+            searchIcon.style.display = "none";
+            searchInput.style.display = "flex";
+        } else {
+            searchIcon.style.display = "inline-block";
+            searchInput.style.display = "none";
+        }
+    }
+</script>
+
 </html>
