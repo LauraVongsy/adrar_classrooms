@@ -4,7 +4,7 @@
 }
 
 main {
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
 
 .candidature {
@@ -85,7 +85,7 @@ main {
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
-  height: 500px;
+  min-height: 500px;
   width: 100%;
   background-color: #5584ac;
   color: white;
