@@ -115,15 +115,17 @@ form label {
  }
 
 
- .steven-container{
-    display:flex;
-    align-items: baseline;
+ .steven-container {
+     display: flex;
+     align-items: baseline;
  }
+
  .steven {
-     height: 1000em;
+     height: 10em;
      width: 10em;
 
  }
+
  .bottom-image-container {
      text-align: center;
      /* Center the image horizontally */
