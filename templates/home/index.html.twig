@@ -6,10 +6,13 @@
     <link rel="stylesheet" href="/css/home.css">
 {% endblock %}
 
-{% block body %}
-    {% include 'header.html.twig' %}
+{% block header %}
+{% include 'header.html.twig' %}
+{% endblock %}
 
-    
+{% block body %}
+   
+
     <main>
         <section class="candidature">
         <h1>Votre métier de demain, à portée de main</h1>
@@ -52,6 +55,12 @@
         </section>
     </main>
 
-    {% include 'footer.html.twig' %}
+  
 {% endblock %}
+
+
+  {% block footer %}
+  {% include 'footer.html.twig' %}
+  {% endblock %}
+
 

@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+  {% block stylesheets %}
+  <link rel="stylesheet" href={{asset ("css/header.css")}}>
+        {% endblock %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/header.css">
-</head>
-
-<body>
+ {% block header %}
     <header>
         <img class="header-logo" src={{asset ("assets/logo.png")}} alt="logo adrar">
         <img class="header-classrooms" src={{asset ("assets/classrooms-text.png")}}>
@@ -22,8 +16,9 @@
         <img class="search-icon" src={{asset ("assets/loupe.svg")}} onclick="toggleSearch()">
         <button class="sign-in-btn">Se connecter</button>
     </header>
-</body>
+{% endblock %}
 
+{% block js %}
 <script>
     function toggleSearch() {
         var searchIcon = document.querySelector(".search-icon");
@@ -38,5 +33,5 @@
         }
     }
 </script>
+{% endblock %}
 
-</html>

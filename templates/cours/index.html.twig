@@ -6,8 +6,12 @@
 <link rel="stylesheet" href="/css/cours.css">
 {% endblock %}
 
-{% block body %}
+{% block header %}
 {% include 'header.html.twig' %}
+{% endblock %}
+
+{% block body %}
+ 
 <main>
     <section class="banner">
         <h1>Titre</h1>
@@ -83,6 +87,14 @@
         </div>
     </section>
 </main>
-<script src={{asset ("js/cours.js") }}></script>
-{% include 'footer.html.twig' %}
+
 {% endblock %}
+
+ {% block footer %}
+  {% include 'footer.html.twig' %}
+ {% endblock %}
+
+ {% block js %}
+ <script src={{asset ("js/cours.js") }}></script>
+ {% endblock %}
+
