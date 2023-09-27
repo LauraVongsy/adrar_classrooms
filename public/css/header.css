@@ -12,24 +12,20 @@ header {
   justify-content: space-evenly;
   background-color: black;
 }
-
 .header-logo {
   width: 83px;
   height: 83px;
 }
-
 .header-classrooms {
   width: 214px;
   height: 30px;
 }
-
 .header-links {
   list-style: none;
   color: gray;
   font-size: 25px;
   cursor: pointer;
 }
-
 .header-links a {
   text-decoration: none;
 }
