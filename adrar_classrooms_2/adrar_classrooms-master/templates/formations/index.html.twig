@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello Page2Controller!{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="/css/formations.css">
+{% endblock %}
+
+{% block body %}
+{% include 'header.html.twig' %}
+<main>
+<h1 style="margin-top: 25px;">Cours</h1>
+    
+    <div class="select-container">
+        
+        <select class="langages">
+            <option value="langage1">Langages </option>
+            <option value="langage2">Langage 1</option>
+            <option value="langage2">Langage 2</option>
+            <option value="langage2">Langage 3</option>
+            <option value="langage2">Langage 4</option>
+            <option value="langage2">Langage 5</option>
+         </select>
+    </div>
+    
+    <div class="card">
+        <div class="color-box1"></div>
+        <div class="card-content">
+            <h2 style="font-size: 1.5em;">COURS 1</h2>
+            <p style="color: white; margin-top: 5px;">Titre</p>
+            <div class="info" style="margin-top: 15px;">
+                <div class="info-icon">
+                 <img class="icon-signal" src={{asset ("assets/signal-solid.svg")}} alt="signal">
+                    <span>Niveau</span>
+                </div>
+                <div class="info-icon" style="margin-left: 15px;">
+                  <img class="icon-time" src={{asset ("assets/clock-regular.svg")}} alt="signal">
+                    <span>Temps</span>
+                </div>
+            </div>
+            <p style="margin-top: 20px; color: white;">Synopsis</p>
+        </div>
+    </div>
+
+
+       <div class="card">
+        <div class="color-box2"></div>
+        <div class="card-content">
+            <h2 style="font-size: 1.5em;">COURS 2</h2>
+            <p style="color: white; margin-top: 5px;">Titre</p>
+            <div class="info" style="margin-top: 15px;">
+                <div class="info-icon">
+                 <img class="icon-signal" src={{asset ("assets/signal-solid.svg")}} alt="signal">
+                    <span>Niveau</span>
+                </div>
+                <div class="info-icon" style="margin-left: 15px;">
+                  <img class="icon-time" src={{asset ("assets/clock-regular.svg")}} alt="signal">
+                    <span>Temps</span>
+                </div>
+            </div>
+            <p style="margin-top: 20px; color: white;">Synopsis</p>
+        </div>
+    </div>
+       <div class="card">
+        <div class="color-box3"></div>
+        <div class="card-content">
+            <h2 style="font-size: 1.5em;">COURS 3</h2>
+            <p style="color: white; margin-top: 5px;">Titre</p>
+            <div class="info" style="margin-top: 15px;">
+                <div class="info-icon">
+                 <img class="icon-signal" src={{asset ("assets/signal-solid.svg")}} alt="signal">
+                    <span>Niveau</span>
+                </div>
+                <div class="info-icon" style="margin-left: 15px;">
+                  <img class="icon-time" src={{asset ("assets/clock-regular.svg")}} alt="signal">
+                    <span>Temps</span>
+                </div>
+            </div>
+            <p style="margin-top: 20px; color: white;">Synopsis</p>
+        </div>
+    </div>
+       <div class="card">
+        <div class="color-box4"></div>
+        <div class="card-content">
+            <h2 style="font-size: 1.5em;">COURS 4</h2>
+            <p style="color: white; margin-top: 5px;">Titre</p>
+            <div class="info" style="margin-top: 15px;">
+                <div class="info-icon">
+                 <img class="icon-signal" src={{asset ("assets/signal-solid.svg")}} alt="signal">
+                    <span>Niveau</span>
+                </div>
+                <div class="info-icon" style="margin-left: 15px;">
+                  <img class="icon-time" src={{asset ("assets/clock-regular.svg")}} alt="signal">
+                    <span>Temps</span>
+                </div>
+            </div>
+            <p style="margin-top: 20px; color: white;">Synopsis</p>
+        </div>
+    </div>
+       <div class="card" style="margin-bottom: 75px">
+        <div class="color-box5"></div>
+        <div class="card-content">
+            <h2 style="font-size: 1.5em;">COURS 5</h2>
+            <p style="color: white; margin-top: 5px;">Titre</p>
+            <div class="info" style="margin-top: 15px;">
+                <div class="info-icon">
+                 <img class="icon-signal" src={{asset ("assets/signal-solid.svg")}} alt="signal">
+                    <span>Niveau</span>
+                </div>
+                <div class="info-icon" style="margin-left: 15px;">
+                  <img class="icon-time" src={{asset ("assets/clock-regular.svg")}} alt="signal">
+                    <span>Temps</span>
+                </div>
+            </div>
+            <p style="margin-top: 20px; color: white;">Synopsis</p>
+        </div>
+    </div>
+       
+</main>
+{% include 'footer.html.twig' %}
+{% endblock %}
