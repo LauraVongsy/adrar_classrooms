@@ -1,0 +1,32 @@
+{% block stylesheets %}
+<link rel="stylesheet" href={{asset ("css/footer.css")}}>
+        {% endblock %}
+
+{% block footer %}
+<footer>
+        <span>2023 © ADRAR Classrooms. Tous droits réservés.</span>
+        <button class="up-btn">
+            <img class="chevron" src={{asset ("assets/chevron.png")}} alt="">
+            <img class="chevron" src={{asset ("assets/chevron.png")}} alt="">
+        </button>
+    </footer>
+{% endblock %}
+    
+ {% block js %}
+ <script>
+
+    let scrollToTopButton = document.querySelector(".up-btn");
+
+    scrollToTopButton.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+
+</script>
+ {% endblock %}
+
+
